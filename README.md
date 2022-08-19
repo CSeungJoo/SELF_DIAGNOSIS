@@ -1,1 +1,1 @@
-# SELF_DIAGNOSIS
+# 자가진단
