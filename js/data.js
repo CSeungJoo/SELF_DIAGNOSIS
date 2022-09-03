@@ -102,7 +102,7 @@ for(var i=1; i < NEUROSURGER_keys.length; i++){
  */
     var plus1 = 1;
 function change() {
-    plus1;
+    this.plus1 = plus1;
     const InternalMedicineChange = document.getElementById('InternalMedicine');
     const OTOLARYNGOLOGYChange = document.getElementById('OTOLARYNGOLOGY');
     const ORTHOPEDICSChange = document.getElementById('ORTHOPEDICS');
@@ -111,11 +111,11 @@ function change() {
     InternalMedicineChange.innerText = InternalMedicine_vals_arr[plus1];
     OTOLARYNGOLOGYChange.innerText = OTOLARYNGOLOGY_vals_arr[plus1];
     ORTHOPEDICSChange.innerText = ORTHOPEDICS_vals_arr[plus1];
+    NEUROSURGERChange.innerText = NEUROSURGER_vals_arr[plus1];
     if(plus1 == 6) {
         ORTHOPEDICSChange.style.display ='none';
     }
 
-    NEUROSURGERChange.innerText = NEUROSURGER_vals_arr[plus1];
     if(plus1 == 7) {
         NEUROSURGERChange.style.display ='none';
     }
